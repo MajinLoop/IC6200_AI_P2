@@ -187,5 +187,13 @@ Instalarlo con conda no me sirvió así que lo isntalé con pip.
 
 
 
+## Install Torchviz
+```bash
+pip install torchviz
+```
+
+## Instalación de Graphviz
+Recordar agregarlo al PATH
+https://graphviz.org/download/
 
 
