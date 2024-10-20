@@ -5,6 +5,8 @@ LEARNING_RATE = 0.001
 CATEGORIES = 10
 shuffle = False
 sin dropout
+sin inception
+sin scheduler
 ## Results
 Evaluating model B (Raw)
 Accuracy of the model on the test images: 30.30%
@@ -23,6 +25,8 @@ LEARNING_RATE = 0.001
 CATEGORIES = 10
 shuffle = False
 sin dropout
+sin inception
+sin scheduler
 ## Results
 Evaluating model B (Raw)
 Accuracy of the model on the test images: 86.36%
@@ -41,6 +45,8 @@ LEARNING_RATE = 0.0005
 CATEGORIES = 10
 shuffle = False
 sin dropout
+sin inception
+sin scheduler
 ## Results
 Evaluating model B (Raw)
 Accuracy of the model on the test images: 87.88%
@@ -59,6 +65,8 @@ LEARNING_RATE = 0.0005
 CATEGORIES = 3
 shuffle = False
 sin dropout
+sin inception
+sin scheduler
 ## Results
 Evaluating model B (Raw)
 Accuracy of the model on the test images: 81.82%
@@ -77,6 +85,8 @@ LEARNING_RATE = 0.0005
 CATEGORIES = 3
 shuffle = True
 sin dropout
+sin inception
+sin scheduler
 ## Results
 Evaluating model B (Raw)
 Accuracy of the model on the test images: 87.88%
@@ -95,6 +105,8 @@ LEARNING_RATE = 0.0005
 CATEGORIES = 3
 shuffle = True
 con dropout
+sin inception
+sin scheduler
 ## Results
 Evaluating model B (Raw)
 Accuracy of the model on the test images: 84.85%
@@ -104,3 +116,43 @@ Accuracy of the model on the test images: 92.42%
 
 Evaluating model B (Canny)
 Accuracy of the model on the test images: 78.79%
+
+
+# Iter 7
+## Enviroment
+EPOCH = 20
+LEARNING_RATE = 0.0005
+CATEGORIES = 3
+shuffle = True
+con dropout
+con inception
+sin scheduler
+## Results
+Evaluating model B (Raw)
+Accuracy of the model on the test images: 86.36%
+
+Evaluating model B (Bilateral)
+Accuracy of the model on the test images: 84.85%
+
+Evaluating model B (Canny)
+Accuracy of the model on the test images: 84.85%
+
+
+# Iter 8
+## Enviroment
+EPOCH = 20
+LEARNING_RATE = 0.001
+CATEGORIES = 3
+shuffle = True
+con dropout
+con inception
+con scheduler factor=0.5, patience=2
+## Results
+Evaluating model B Raw
+Accuracy of the model on the test images: 86.36%
+
+Evaluating model B Bilateral
+Accuracy of the model on the test images: 84.85%
+
+Evaluating model B Canny
+Accuracy of the model on the test images: 77.27%
