@@ -1,3 +1,3 @@
-src/data/
-src/tests/
+src/data
+src/tests
 src/wandb
